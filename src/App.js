@@ -1,10 +1,11 @@
 import React from "react";
 import "./styles.scss";
+import AppDashboard from "./Components/AppDashboard";
 
 export default function App() {
   return (
-    <div className="App">
-      <h1>Hello CodeSandbox</h1>
+    <div className="go-dutch-app">
+      <AppDashboard />
     </div>
   );
 }
