@@ -17,6 +17,7 @@ body {
   padding: 0px;
 }
 
+
 .App {
   background-color: #ddd;
 }
@@ -51,7 +52,6 @@ body {
   height: auto;
   @include flex-position(center, space-around);
   flex-direction: column;
-  padding: 20px 0px;
 }
 
 .add-data {

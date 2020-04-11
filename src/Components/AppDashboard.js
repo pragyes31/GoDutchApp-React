@@ -14,9 +14,8 @@ export default class AppDashboard extends React.Component {
     };
   }
   render() {
-    const toggleModal = e => {
+    const openModal = e => {
       const isFriendModalOpen = e.target.classList.contains("add-friend-btn");
-      // const isExpenseModalOpen = e.target.classList.contains("add-expense-btn");
       if (!!isFriendModalOpen) {
         this.setState(prevState => {
           prevState.isAddFriendModalOpen = !prevState.isAddFriendModalOpen;
@@ -33,7 +32,7 @@ export default class AppDashboard extends React.Component {
     return (
       <div className="app-dashboard">
         <Header title="Go-Dutch App" />
-        <AddNewBtns openModal={toggleModal} />
+        <AddNewBtns openModal={openModal} />
         <UsersData />
         <AddNewFriendModal
           isAddFriendModalOpen={this.state.isAddFriendModalOpen}

@@ -1,8 +1,8 @@
 import React from "react";
 
 export default function AddData(props) {
-  const handleNewFriend = () => {
-    props.openModal();
+  const handleNewFriend = e => {
+    props.openModal(e);
   };
   return (
     <div className="add-data">
